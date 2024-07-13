@@ -18,7 +18,7 @@ public class Util {
     public static Connection getConnection() throws SQLException {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testuser", "root", "root");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "root");
             return connection;
         } catch (SQLException e) {
             e.printStackTrace();
