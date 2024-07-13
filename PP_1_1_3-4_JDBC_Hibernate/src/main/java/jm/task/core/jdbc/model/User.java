@@ -11,19 +11,13 @@ public class User {
     @Column(name = "id")
     private Long id;
     
-    @Column
-    private String name;
+    @Column private String name;
     
-    @Column
-    private String lastName;
+    @Column private String lastName;
     
-    @Column
-    private Byte age;
+    @Column private Byte age;
     
-    
-    public User() {
-    
-    }
+    public User() {}
     
     public User(String name, String lastName, Byte age) {
         this.name = name;
@@ -65,7 +59,8 @@ public class User {
     
     @Override
     public String toString() {
-        return "User{" + "id=" + id + ", name='" + name + '\'' + ", lastName='" + lastName + '\'' + ", age=" + age + '}';
+        return "User{"
+                + "id=" + id + ", name='" + name + '\'' + ", lastName='" + lastName
+                + '\'' + ", age=" + age + '}';
     }
-    
 }
